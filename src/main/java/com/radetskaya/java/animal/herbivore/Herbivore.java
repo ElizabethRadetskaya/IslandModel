@@ -1,21 +1,23 @@
 package com.radetskaya.java.animal.herbivore;
 
 import com.radetskaya.java.animal.Animal;
+import com.radetskaya.java.plant.Plant;
+
+import javax.xml.stream.Location;
 
 // Абстрактний клас для травоїдних
-abstract class Herbivore extends Animal {
-    public Herbivore(String species, int hungerLimit, double moveChance, double reproductionChance) {
-        super(species, hungerLimit, moveChance, reproductionChance);
+public abstract class Herbivore extends Animal {
+    public Herbivore(String species, double weight, int maxPopulation, int maxMovement, double foodNeeded) {
+        super(species, weight, maxPopulation, maxMovement, foodNeeded);
     }
 
     @Override
     public void eat(Location location) {
-        // Логіка травоїдних: поїдання рослин
-        if (location.plants > 0) {
-            location.plants--;
+        for (Plant plant : location.getPlants()) {
+            location.removePlant(plant);
             this.currentHunger = 0;
-        } else {
-            this.currentHunger++;
+            return;
         }
+        this.currentHunger++;
     }
 }

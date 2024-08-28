@@ -1,26 +1,40 @@
 package com.radetskaya.java.animal;
 
+import com.radetskaya.java.location.Island;
+
 import javax.xml.stream.Location;
 
-/// Абстрактний клас для тварин
-public abstract class Animal {
-    String species;
-    int hungerLimit; // Максимальна кількість кроків, які тварина може витримати без їжі
-    int currentHunger; // Поточний рівень голоду
-    double moveChance; // Імовірність руху
-    double reproductionChance; // Імовірність розмноження
+/**
+ * @param species вид
+ * @param weight вага
+ * @param maxPopulation максимальна кількість населення
+ * @param  maxMovement максимальний рух
+ * @param foodNeeded Потрібна їжа
+ * @param   currentHunger це поточний голод = 0
+ */
 
-    public Animal(String species, int hungerLimit, double moveChance, double reproductionChance) {
+
+public abstract class Animal {
+    protected String species;
+    protected double weight;
+    protected int maxPopulation;
+    protected int maxMovement;
+    protected double foodNeeded;
+    protected double currentHunger;
+
+    public Animal(String species, double weight, int maxPopulation, int maxMovement, double foodNeeded) {
         this.species = species;
-        this.hungerLimit = hungerLimit;
+        this.weight = weight;
+        this.maxPopulation = maxPopulation;
+        this.maxMovement = maxMovement;
+        this.foodNeeded = foodNeeded;
         this.currentHunger = 0;
-        this.moveChance = moveChance;
-        this.reproductionChance = reproductionChance;
     }
 
-    // Загальні методи для тварин
     public abstract void eat(Location location);
     public abstract void move(Island island, int currentX, int currentY);
     public abstract void reproduce(Location location);
-    public abstract void die(Location location);ation location);//помирати
+    public abstract void die(Location location);
+
+    // Додаткові методи
 }
