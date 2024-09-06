@@ -1,7 +1,24 @@
 package com.radetskaya.java.animal.predator;
 
-class Bear extends Predator {
+import com.radetskaya.java.animal.Animal;
+
+public class Bear extends Animal {
     public Bear() {
-        super("Bear", 8, 0.4, 0.2);
+        super(500, 5, 2, 80);
+    }
+
+    @Override
+    public void move() {
+        // Реализовать перемещение
+    }
+
+    @Override
+    public void eat() {
+        // Реализовать поедание
+    }
+
+    @Override
+    public void reproduce() {
+        // Реализовать размножение
     }
 }

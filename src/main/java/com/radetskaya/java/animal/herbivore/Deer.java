@@ -1,7 +1,24 @@
 package com.radetskaya.java.animal.herbivore;
 
-class Deer extends Herbivore {
+import com.radetskaya.java.animal.Animal;
+
+public class Deer extends Animal {
     public Deer() {
-        super("Deer", 6, 0.7, 0.3);
+        super(300, 20, 4, 50);
+    }
+
+    @Override
+    public void move() {
+        // Реализовать перемещение
+    }
+
+    @Override
+    public void eat() {
+        // Реализовать поедание
+    }
+
+    @Override
+    public void reproduce() {
+        // Реализовать размножение
     }
 }

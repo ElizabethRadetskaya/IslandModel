@@ -1,29 +1,25 @@
 package com.radetskaya.java.animal.predator;
 
 
-import com.radetskaya.java.lifeform.FeedingProbability;
-import com.radetskaya.java.location.Island;
+import com.radetskaya.java.animal.Animal;
 
-import javax.xml.stream.Location;
-
-// Конкретні хижаки
-public class Wolf extends Predator {
+public class Wolf extends Animal {
     public Wolf() {
-        super("Wolf", 50, 30, 3, 8);
+        super(50, 30, 3, 8);
     }
 
     @Override
-    public void move(Island island, int currentX, int currentY) {
-        // Реалізація переміщення вовка
+    public void move() {
+        // Реализовать перемещение
     }
 
     @Override
-    public void reproduce(Location location) {
-        // Реалізація розмноження вовка
+    public void eat() {
+        // Реализовать поедание
     }
 
     @Override
-    public void die(Location location) {
-        // Реалізація смерті вовка
+    public void reproduce() {
+        // Реализовать размножение
     }
 }
