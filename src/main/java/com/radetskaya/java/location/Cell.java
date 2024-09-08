@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
   //Класс Cell: Реализован с методами для управления животными и растениями.
- class Cell {
+ public class Cell {
     private List<Animal> animals = new ArrayList<>();
     private List<Plant> plants = new ArrayList<>();
     private final int maxAnimals = 10; // Установите максимальное количество животных на клетку
@@ -16,9 +16,16 @@ import java.util.List;
         return animals;
     }
 
-    public void addAnimal(Animal animal) {
-        animals.add(animal);
-    }
+      public void addAnimal(Animal animal) {
+          if (animals.size() < maxAnimals) {
+              animals.add(animal);
+          }
+      }
+
+      // Метод для удаления животного
+          public void removeAnimal(Animal animal) {
+              animals.remove(animal);
+          }
 
     public int getMaxAnimals() {
         return maxAnimals;

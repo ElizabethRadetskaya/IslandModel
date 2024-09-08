@@ -20,16 +20,15 @@ import com.radetskaya.java.animal.herbivore.Rabbit;
 import com.radetskaya.java.animal.herbivore.Sheep;
 import com.radetskaya.java.plant.Plant;
 
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.function.Supplier;
 
 public class Simulation {
-    private final int gridWidth = 100;
-    private final int gridHeight = 20;
-    private final Cell[][] grid = new Cell[gridWidth][gridHeight];
+    private static final int gridWidth = 100;
+    private static final int gridHeight = 20;
+    private static final Cell[][] grid = new Cell[gridWidth][gridHeight];
     private final List<Animal> animals = new ArrayList<>();
     private final List<Plant> plants = new ArrayList<>();
     private final int stepsPerIteration = 10; // Примерное количество шагов за итерацию
@@ -39,6 +38,7 @@ public class Simulation {
         populateGrid();
     }
 
+    // Метод для инициализации сетки
     private void initializeGrid() {
         for (int x = 0; x < gridWidth; x++) {
             for (int y = 0; y < gridHeight; y++) {
@@ -46,6 +46,15 @@ public class Simulation {
             }
         }
     }
+
+    // Статический метод для получения клетки по координатам
+    public static Cell getCell(int x, int y) {
+        if (x >= 0 && x < gridWidth && y >= 0 && y < gridHeight) {
+            return grid[x][y];
+        }
+        return null; // Если координаты вне сетки
+    }
+
 
     private void populateGrid() {
         // Количество животных и растений для размещения
@@ -85,7 +94,7 @@ public class Simulation {
         placeAnimals(numberOfDucks, Duck::new);
         placeAnimals(numberOfCaterpillars, Caterpillar::new);
         // Заполнить сетку растениями
-        placePlants(numberOfPlants, Plant::new);
+        placePlants(numberOfPlants,Plant::new);
 
 
     }
@@ -148,6 +157,7 @@ public class Simulation {
             System.out.println();
         }
     }
+
 
 
     public static void main(String[] args) {

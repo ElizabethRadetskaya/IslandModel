@@ -1,10 +1,10 @@
 
-d
-java:S1170"!Make this final field static too.(±Äæ°8ú¼„ºœ2J$e7ab56e8-7e8f-4c81-9046-17877a90c9c4
-d
-java:S1170"!Make this final field static too.(Şº‚©8û¼„ºœ2J$6c0fa3b6-4bcf-4cb2-9736-1437dbee8fc5
+¡	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ë—øÿÿÿÿ8³Ş–Œ2J$38c7a610-5474-4727-981c-5833022851ab
+¡	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(«‘…Ôùÿÿÿÿ8¿§—Œ2J$68e1c472-16d6-4c87-b698-6c47086db18e
 i
-java:S1170#"!Make this final field static too.(ıŸîÇúÿÿÿÿ8û¼„ºœ2J$ca5d2c62-d28c-4aa4-a168-798ac9d9f22a
-r	java:S106y"+Replace this use of System.out by a logger.(İÏ‹ÿÿÿÿÿ8ƒ½„ºœ2J$85d14ebc-42d6-47cf-92e2-ebccb9c50f61
-s	java:S106’"+Replace this use of System.out by a logger.(ó¾¯ÿÿÿÿÿ8ƒ½„ºœ2J$ee7d99c1-bc90-47e8-abcc-9501524382ea
-s	java:S106”"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8„½„ºœ2J$7274aeeb-7693-4003-a394-2a713a9b3053
+java:S1170""!Make this final field static too.(ıŸîÇúÿÿÿÿ8ˆÒûÚœ2J$881c5303-96ee-40c6-9eb8-c1dde3b30bc3
+~
+java:S2696-"6Make the enclosing method "static" or remove this set.( Şƒıÿÿÿÿ8çó—Œ2J$216c5c64-e1d7-4ad3-8345-816b78e5e26a
+s	java:S106‚"+Replace this use of System.out by a logger.(İÏ‹ÿÿÿÿÿ8¶ÒûÚœ2J$575c1fe3-c11c-4e25-8d2b-403704970a4a
+s	java:S106›"+Replace this use of System.out by a logger.(ó¾¯ÿÿÿÿÿ8¸ÒûÚœ2J$d9305e01-b94d-4c17-8531-a4341c0b45ef
+s	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8¹ÒûÚœ2J$e0dd73fc-867d-4706-b3ba-18994d5cc05a

@@ -1,3 +1,11 @@
 
+
+java:S5993	"9Change the visibility of this constructor to "protected".(ãÓ£ïùÿÿÿÿ8¯È¸»œ2J$3d6a1593-4d53-4be9-abde-345a5548a655
 |
-java:S5993"9Change the visibility of this constructor to "protected".(úÒ¶ï8‡íê¯œ2J$b20a8685-3e23-4059-afde-2a7fb034de20
+java:S3400"9Remove this method and declare a constant for this value.(§¼Éç8´È¸»œ2J$dd4bbc3b-5845-40ca-86a2-a569f53fb441
+n
+java:S1172"+Remove this unused method parameter "prey".(ßü¡…8¿È¸»œ2J$394c2992-2d07-4398-9d39-954a7d27bd61
+|
+java:S3400#"9Remove this method and declare a constant for this value.(”·³›8ÀÈ¸»œ2J$4c089a58-3d61-4190-8ac5-d5dc2bf38484
+n
+java:S1172!"+Remove this unused method parameter "prey".(€åÅŠ8ÀÈ¸»œ2J$68f231c8-21da-4415-9e30-dd35d1b8280e
