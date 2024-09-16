@@ -1,16 +1,16 @@
 
 
-java:S2259."FA "NullPointerException" could be thrown; "lifeForm" is nullable here.(„İÂ şÿÿÿÿ8šš¥Ÿ2J$b278517e-ce70-4006-8326-9902fe85de47
+java:S2259."FA "NullPointerException" could be thrown; "lifeForm" is nullable here.(„İÂ şÿÿÿÿ8šš¥Ÿ2J$71fc9b22-9f28-4939-b6d3-95b24eceeb45
 
-java:S5993"9Change the visibility of this constructor to "protected".(»í‹¸ûÿÿÿÿ8à¿ß¸2J$414c5885-97af-4ce7-bfd0-b01038a68899
+java:S5993"9Change the visibility of this constructor to "protected".(»í‹¸ûÿÿÿÿ8à¿ß¸2J$3597def4-25c1-40d0-9f72-7894fcde7137
 •
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(¼áğ«8ä¿ß¸2J$98a343b4-15e7-4811-b509-db691e1b0791
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(¼áğ«8ä¿ß¸2J$ac7e8b2b-3577-445a-af55-625708cbc54b
 
-java:S6201$"JReplace this instanceof check and cast with 'instanceof LifeForm lifeform'(äïâ8¢šš¥Ÿ2J$5e8343eb-3631-49b5-81e5-79c581415782
-r	java:S106*"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8ø¿ß¸2J$995d19b3-c2a2-4180-aaa7-e86f68d61c1c
+java:S6201$"JReplace this instanceof check and cast with 'instanceof LifeForm lifeform'(äïâ8¢šš¥Ÿ2J$6ea0778b-2913-41a8-8cfe-a8775af872fa
+r	java:S106*"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8ø¿ß¸2J$5fc4e396-6169-4862-bc6b-c1f957d90019
 †
-java:S1155=">Use isEmpty() to check whether the collection is empty or not.(ãôãâúÿÿÿÿ8¤šš¥Ÿ2J$4750a64d-7c61-42ff-ab27-49175413de6d
+java:S1155=">Use isEmpty() to check whether the collection is empty or not.(ãôãâúÿÿÿÿ8¤šš¥Ÿ2J$e076e3b2-bf15-4ea3-9fc6-2400157bb1cc
 a
-java:S2119Z"Save and re-use this "Random".(”šÓ÷8ƒÀß¸2J$d4d311a4-3c32-4a77-8498-b39ecd9cdfaf
-c	java:S131a""Add a default case to this switch.(ÃÖ§[8ˆÀß¸2J$79371ade-93f8-4d18-92bc-58028daf9d2b
-i	java:S131t""Add a default case to this switch.(Æóõµıÿÿÿÿ8ŠÀß¸2J$60eeb8f6-feb2-4193-8028-ce4282160ca1
+java:S2119Z"Save and re-use this "Random".(”šÓ÷8ƒÀß¸2J$05784da7-8acd-4dc9-80d3-7bfa1b358f25
+c	java:S131a""Add a default case to this switch.(ÃÖ§[8ˆÀß¸2J$e2bb2db3-b928-4eb9-83ab-acdfaf6764be
+i	java:S131t""Add a default case to this switch.(Æóõµıÿÿÿÿ8ŠÀß¸2J$930fe76b-ff3b-45df-ac76-f771dfebcac1
