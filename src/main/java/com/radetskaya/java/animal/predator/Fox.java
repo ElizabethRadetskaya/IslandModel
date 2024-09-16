@@ -1,24 +1,46 @@
 package com.radetskaya.java.animal.predator;
 
 import com.radetskaya.java.animal.Animal;
+import com.radetskaya.java.field.IslandField;
+import com.radetskaya.java.field.Location;
 
-public class Fox extends Animal {
+public class Fox extends Predator {
+    /**
+     * Конструктор класса Fox.
+     * Устанавливает значения характеристик для лисы.
+     */
     public Fox() {
-        super(8, 30, 2, 2);
+        super(8, 2, 2, 30, "Fox");
     }
 
+    /**
+     * Получает шанс съесть определенный вид пищи.
+     *
+     * @param foodName Название пищи
+     * @return Шанс съесть пищу
+     */
     @Override
-    public void move() {
-        // Реализовать перемещение
+    public double getChanceToEat(String foodName) {
+        return switch (foodName) {
+            case "Caterpillar" -> 0.4;
+            case "Duck" -> 0.6;
+            case "Rabbit" -> 0.7;
+            case "Mouse" -> 0.9;
+            default -> 0;
+        };
     }
 
+    /**
+     * Размножается с партнером.
+     * Если партнером является лиса, создается новая лиса на той же локации.
+     *
+     * @param partner Партнер для размножения
+     */
     @Override
-    public void eat() {
-        // Реализовать поедание
-    }
-
-    @Override
-    public void reproduce() {
-        // Реализовать размножение
+    public void multiply(Animal partner) {
+        if (partner instanceof Fox){
+            Location location = IslandField.getInstance().getLocation(partner.getRow(), partner.getColumn());
+            IslandField.getInstance().addAnimal(new Fox(), location.getRow(), location.getColumn());
+        }
     }
 }

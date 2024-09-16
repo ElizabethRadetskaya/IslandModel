@@ -1,18 +1,15 @@
 package com.radetskaya.java.plant;
 
 // Базовий клас для рослин
-public class Plant {
-    double weight;
 
+
+import com.radetskaya.java.lifeform.LifeForm;
+
+public class Plant extends LifeForm {
+    /**
+     * Конструктор класу Plant
+     */
     public Plant() {
-        this.weight = 1.0;  // или другое значение по умолчанию
-    }
-
-    public Plant(double weight) {
-        this.weight = weight;
-    }
-
-    public double getWeight() {
-        return weight;
+        super(1, 200, "Plant");
     }
 }

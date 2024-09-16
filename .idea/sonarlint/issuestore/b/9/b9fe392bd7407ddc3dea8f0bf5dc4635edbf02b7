@@ -1,0 +1,13 @@
+
+…
+java:S1192"cDefine a constant instead of duplicating this literal "----------------------------------" 3 times.(Õ÷õúÿÿÿÿ8¿ï†·Ÿ2
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²Ãƒó8Àï†·Ÿ2
+L	java:S106"+Replace this use of System.out by a logger.(Õ÷õúÿÿÿÿ8Åï†·Ÿ2
+L	java:S106"+Replace this use of System.out by a logger.(ØŒ”§ıÿÿÿÿ8Åï†·Ÿ2
+L	java:S106"+Replace this use of System.out by a logger.(ı¿³Ÿıÿÿÿÿ8Åï†·Ÿ2
+G	java:S106"+Replace this use of System.out by a logger.(‘¯Áä8Åï†·Ÿ2
+L	java:S106"+Replace this use of System.out by a logger.(àåáñıÿÿÿÿ8Åï†·Ÿ2
+L	java:S106%"+Replace this use of System.out by a logger.(Õ÷õúÿÿÿÿ8Æï†·Ÿ2
+G	java:S106&"+Replace this use of System.out by a logger.(ˆÃ¯8Æï†·Ÿ2
+L	java:S106'"+Replace this use of System.out by a logger.(Õ÷õúÿÿÿÿ8Æï†·Ÿ2
+L	java:S106("+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8Æï†·Ÿ2

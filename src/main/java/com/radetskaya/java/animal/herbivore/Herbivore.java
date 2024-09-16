@@ -1,22 +1,35 @@
 package com.radetskaya.java.animal.herbivore;
 
-import com.radetskaya.java.animal.Animal;
-import com.radetskaya.java.plant.Plant;
 
-import java.util.List;
+import com.radetskaya.java.animal.Animal;
 
 public abstract class Herbivore extends Animal {
-    public Herbivore(double weight, int movementSpeed, int maxOnCell, double foodNeeded) {
-        super(weight, movementSpeed, maxOnCell, foodNeeded);
+    /**
+     * Конструктор класса Herbivore.
+     * Устанавливает значения характеристик для травоядного животного.
+     *
+     * @param weight        Вес животного
+     * @param step          Шаг передвижения животного
+     * @param maxHp         Максимальное количество очков здоровья животного
+     * @param maxPopulation Максимальное количество животных данного вида на острове
+     * @param name          Название вида животного
+     */
+    public Herbivore(double weight, int step, double maxHp, int maxPopulation, String name) {
+        super(weight, step, maxHp, maxPopulation, name);
     }
 
+    /**
+     * Получает вероятность поедания определенного вида пищи.
+     * Для травоядных животных вероятность поедания растений равна 1, для всех остальных видов пищи вероятность равна 0.
+     *
+     * @param foodName Название вида пищи
+     * @return Вероятность поедания пищи
+     */
     @Override
-    public void eat() {
-        List<Plant> plantsInCell = currentCell.getPlants();
-        if (!plantsInCell.isEmpty()) {
-            Plant plant = plantsInCell.get(0); // Травоядное съедает растение
-            plantsInCell.remove(plant);
-            this.feed(plant.getWeight());
-        }
+    public double getChanceToEat(String foodName) {
+        return switch (foodName) {
+            case "Plant" -> 1;
+            default -> 0;
+        };
     }
 }

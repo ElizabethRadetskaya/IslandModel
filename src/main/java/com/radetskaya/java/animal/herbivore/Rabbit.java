@@ -1,24 +1,30 @@
 package com.radetskaya.java.animal.herbivore;
 
+
 import com.radetskaya.java.animal.Animal;
+import com.radetskaya.java.field.IslandField;
+import com.radetskaya.java.field.Location;
 
-public class Rabbit extends Animal {
+public class Rabbit extends Herbivore {
+    /**
+     * Конструктор класса Rabbit.
+     * Устанавливает значения характеристик для кролика.
+     */
     public Rabbit() {
-        super(2, 150, 2, 0.45);
+        super(2, 2, 0.45, 150, "Rabbit");
     }
 
+    /**
+     * Размножается с партнером.
+     * Если партнером является кролик, создается новый кролик на той же локации.
+     *
+     * @param partner Партнер для размножения
+     */
     @Override
-    public void move() {
-        // Реализовать перемещение
-    }
-
-    @Override
-    public void eat() {
-        // Реализовать поедание
-    }
-
-    @Override
-    public void reproduce() {
-        // Реализовать размножение
+    public void multiply(Animal partner) {
+        if (partner instanceof Rabbit){
+            Location location = IslandField.getInstance().getLocation(partner.getRow(), partner.getColumn());
+            IslandField.getInstance().addAnimal(new Rabbit(), location.getRow(), location.getColumn());
+        }
     }
 }
