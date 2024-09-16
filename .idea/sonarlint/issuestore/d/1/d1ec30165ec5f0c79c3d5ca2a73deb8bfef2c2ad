@@ -1,21 +1,21 @@
 
 d
-java:S1170"!Make this final field static too.(ğ£Õå8¸½×¹2J$47c89edd-1978-49b5-8e8a-30320af484e1
+java:S1170"!Make this final field static too.(ğ£Õå8¸½×¹2J$36fc9916-d875-4788-8044-61ab2a63d313
 i
-java:S1170"!Make this final field static too.(øú›şÿÿÿÿ8¸½×¹2J$39e56bfb-89db-499e-b48d-b634a89e6800
+java:S1170"!Make this final field static too.(øú›şÿÿÿÿ8¸½×¹2J$7032231e-3bc7-4470-bdc4-034db9c69f68
 d
-java:S1170 "!Make this final field static too.(¾ê‹¼8¸½×¹2J$b67f6a53-8a14-40c5-a7a9-4c930497ef53
+java:S1170 "!Make this final field static too.(¾ê‹¼8¸½×¹2J$b3b0060f-913e-468d-af96-e1fe1c5ebfff
 Ü
-java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(Ş†¢8¹½×¹2J$7835f907-4d3f-4483-9ac6-dd7aedee1303
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(Ş†¢8¹½×¹2J$6dce3272-e636-4c8a-8197-1842dd20c9a2
 Ÿ
-java:S3077!"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(…›¦úÿÿÿÿ8º½×¹2J$de362a16-6b8a-4f3c-a2f5-8ca30bba8392
+java:S3077!"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(…›¦úÿÿÿÿ8º½×¹2J$461f2ef4-5f4d-4bec-9993-f0dc2c06dbf6
 Ÿ
-java:S3077""WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(óÜòÜÿÿÿÿÿ8º½×¹2J$6064af39-bf87-4850-84f9-79c7dc6892bc
+java:S3077""WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(óÜòÜÿÿÿÿÿ8º½×¹2J$598471d2-4626-41fe-be7d-52dc01761611
 a
-java:S2119"Save and re-use this "Random".(¼İÅf8Ã½×¹2J$a54a0d09-d459-4b1f-bd30-5d610109a1e1
+java:S2119"Save and re-use this "Random".(¼İÅf8Ã½×¹2J$842fe1e4-8937-441a-bdcd-a4b8c9a2d102
 w
-java:S1874—"3Remove this use of "newInstance"; it is deprecated.(™“Õ8ÌŸù¨Ÿ2J$c62541ff-9b9b-427f-9078-60702f0707b6
+java:S1874—"3Remove this use of "newInstance"; it is deprecated.(™“Õ8ÌŸù¨Ÿ2J$80460d3c-9e20-4510-8c14-da68df137515
 a
-java:S2119©"Save and re-use this "Random".(¼İÅf8Å½×¹2J$c741b302-6561-45a9-bce9-b98f4be72e9c
+java:S2119©"Save and re-use this "Random".(¼İÅf8Å½×¹2J$298c02d5-72b1-4e1f-8201-fa04e4782ed6
 |
-java:S1874º"3Remove this use of "newInstance"; it is deprecated.(åš‰Êûÿÿÿÿ8ÍŸù¨Ÿ2J$978b32ea-9327-4013-8571-58a8ead79199
+java:S1874º"3Remove this use of "newInstance"; it is deprecated.(åš‰Êûÿÿÿÿ8ÍŸù¨Ÿ2J$7a8ee4ec-359a-4c8b-a871-e2915cf5c88b

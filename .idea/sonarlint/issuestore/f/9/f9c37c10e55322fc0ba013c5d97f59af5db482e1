@@ -1,9 +1,9 @@
 
 d
-java:S1170"!Make this final field static too.(À÷ß‡8ô„á·Ÿ2J$cc55ff35-21f6-44f2-9afa-cbc76e7e8cdc
+java:S1170"!Make this final field static too.(À÷ß‡8ô„á·Ÿ2J$055b6356-96bf-48e0-a62a-e325d8e725ba
 i
-java:S1170"!Make this final field static too.(§ŸÔæþÿÿÿÿ8ô„á·Ÿ2J$df129a4a-00fe-4d21-abdb-92add45f8eb2
+java:S1170"!Make this final field static too.(§ŸÔæþÿÿÿÿ8ô„á·Ÿ2J$8591572d-62d8-498a-96a2-d7df2728490f
 á
-java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(’þ¡Üþÿÿÿÿ8õ„á·Ÿ2J$0a93f26c-16be-4b86-b8e0-5e7ae60dd9e6
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(’þ¡Üþÿÿÿÿ8õ„á·Ÿ2J$93ae6f0c-7af2-4d04-85f1-f5110c63ebdb
 Ÿ
-java:S3077"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(Åºê±øÿÿÿÿ8ö„á·Ÿ2J$563156d4-8768-41ac-bb45-b264bc045f06
+java:S3077"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(Åºê±øÿÿÿÿ8ö„á·Ÿ2J$4692a26f-1117-42b7-aebf-2c56a73bfad7
