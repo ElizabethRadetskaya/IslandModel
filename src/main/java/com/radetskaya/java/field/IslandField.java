@@ -12,7 +12,7 @@ import java.util.List;
 //Він управляє додаванням та видаленням тварин і рослин на острові, а також дозволяє доступ до всіх локацій і організмів на острові.
 
 public class IslandField {
-        private Location[][] locations; // Двумерный массив состоящий из локаций(ячеек)
+        private Location[][] locations; // Двовимірний масив, що складається з локацій(ячеек)
         private final int numRows = 10; //default
         private final int numColumns = 4; //default
         private static volatile IslandField instance;
