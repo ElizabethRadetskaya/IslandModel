@@ -8,17 +8,17 @@ import com.radetskaya.java.field.Location;
 public class Bear extends Predator {
     /**
      * Конструктор класса Bear.
-     * Устанавливает значения характеристик для медведя.
+     * Встановлює значення параметрів для ведмедя.
      */
     public Bear() {
         super(500, 2, 80, 5, "Bear");
     }
 
     /**
-     * Получает шанс съесть определенный вид пищи.
+     * Має шанс з'їсти певний вид їжі.
      *
-     * @param foodName Название пищи
-     * @return Шанс съесть пищу
+     * @param foodName Назва їжі
+     * @return Шанс з'їсти їжу
      */
     @Override
     public double getChanceToEat(String foodName) {
@@ -35,10 +35,10 @@ public class Bear extends Predator {
     }
 
     /**
-     * Размножается с партнером.
-     * Если партнером является медведь, создается новый медведь на той же локации.
+     * Розмножується із партнером.
+     * Якщо партнером є ведмідь, створюється новий ведмідь на тій самій локації.
      *
-     * @param partner Партнер для размножения
+     * @param partner Партнер для размноження
      */
     @Override
     public void multiply(Animal partner) {
