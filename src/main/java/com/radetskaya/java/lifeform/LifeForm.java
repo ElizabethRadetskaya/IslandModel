@@ -1,9 +1,9 @@
 package com.radetskaya.java.lifeform;
 
 public class LifeForm {
-    private final double weight; // Вес животного/растения в кг
-    private final int maxPopulation; // Максимальное количество вида животного/растения на 1 клетке
-    private final String name; // Имя животного/растения
+    private final double weight; //  Вага тварини/рослини в кг
+    private final int maxPopulation; // Максимальна кількість вида твапин/рослтн на 1 клітинкі
+    private final String name; // Імʼя тварини/рослини
     private int row;
     private int column;
 
