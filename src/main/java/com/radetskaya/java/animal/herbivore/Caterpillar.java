@@ -8,17 +8,17 @@ import com.radetskaya.java.field.Location;
 public class Caterpillar extends Herbivore {
     /**
      * Конструктор класса Caterpillar.
-     * Устанавливает значения характеристик для гусеницы.
+     * Встановлює значення параметрів для гусениці.
      */
     public Caterpillar() {
         super(0.01, 0, 0, 1000, "Caterpillar");
     }
 
     /**
-     * Метод размножения гусеницы.
-     * Если партнер является гусеницей, то создается новая гусеница и добавляется на поле.
+     * Метод розмноження гусениці.
+     * Якщо партнер є гусеницею, створюється нова гусениця і додається на поле.
      *
-     * @param partner Партнер для размножения
+     * @param partner Партнер для розмноження
      */
     @Override
     public void multiply(Animal partner) {
