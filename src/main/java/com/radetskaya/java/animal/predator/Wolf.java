@@ -12,10 +12,10 @@ public class Wolf extends Predator {
     }
 
     /**
-     * Возвращает шанс съесть указанную пищу для волка.
+     * Повертає шанс з'їсти вказану їжу для вовка.
      *
-     * @param foodName Имя пищи
-     * @return Шанс съесть пищу
+     * @param foodName Ім'я їжі
+     * @return Шанс з'їсти їжу
      */
     @Override
     public double getChanceToEat(String foodName) {
@@ -31,9 +31,9 @@ public class Wolf extends Predator {
     }
 
     /**
-     * Метод для размножения волков.
+     * Метод для розмноження вовків.
      *
-     * @param partner Партнер для размножения
+     * @param partner Партнер для размноження
      */
     @Override
     public void multiply(Animal partner) {
