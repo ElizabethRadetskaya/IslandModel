@@ -1,12 +1,12 @@
 package com.radetskaya.java.error;
 /**
- * Исключение, выбрасываемое при попытке обработать объект, который не является формой жизни.
+ * Виняток, що викидається при спробі обробити об'єкт, який не є формою життя.
  */
 public class ObjectNotLifeFormException extends Exception {
     /**
-     * Конструктор класса ObjectNotLifeFormException.
+     * Конструктор класу ObjectNotLifeFormException.
      *
-     * @param msg Сообщение об ошибке
+     * @param msg Повідомлення про помилку
      */
     public ObjectNotLifeFormException(String msg) {
         super(msg);
