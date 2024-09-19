@@ -8,17 +8,17 @@ import com.radetskaya.java.field.Location;
 public class WildBoar extends Herbivore {
     /**
      * Конструктор класса WildBoar.
-     * Устанавливает значения характеристик для дикой свиньи.
+     * Встановлює значення параметрів для дикої свині.
      */
     public WildBoar() {
         super(400, 2, 50, 50, "WildBoar");
     }
 
     /**
-     * Получает шанс съесть определенный вид пищи.
+     * Має шанс з'їсти певний вид їжі.
      *
-     * @param foodName Название пищи
-     * @return Шанс съесть пищу
+     * @param foodName Назва їжі
+     * @return Шанс з'їсти їжу
      */
     @Override
     public double getChanceToEat(String foodName) {
@@ -31,10 +31,10 @@ public class WildBoar extends Herbivore {
     }
 
     /**
-     * Размножается с партнером.
-     * Если партнером является дикая свинья, создается новая дикая свинья на той же локации.
+     * Розмножується із партнером.
+     * Якщо партнером є дика свиня, створюється нова дика свиня на тій самій локації.
      *
-     * @param partner Партнер для размножения
+     * @param partner Партнер для размноження
      */
     @Override
     public void multiply(Animal partner) {
