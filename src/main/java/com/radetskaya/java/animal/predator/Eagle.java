@@ -8,17 +8,17 @@ import com.radetskaya.java.field.Location;
 public class Eagle extends Predator {
     /**
      * Конструктор класса Eagle.
-     * Устанавливает значения характеристик для орла.
+     * Встановлює значення параметрів для орла.
      */
     public Eagle() {
         super(6, 3, 1, 20, "Eagle");
     }
 
     /**
-     * Получает шанс съесть определенный вид пищи.
+     * Має шанс з'їсти певний вид їжі.
      *
-     * @param foodName Название пищи
-     * @return Шанс съесть пищу
+     * @param foodName Назва їжі
+     * @return Шанс з'їсти їжу
      */
     @Override
     public double getChanceToEat(String foodName) {
@@ -31,10 +31,10 @@ public class Eagle extends Predator {
     }
 
     /**
-     * Размножается с партнером.
-     * Если партнером является орел, создается новый орел на той же локации.
+     * Розмножується із партнером.
+     * Якщо партнером є орел, створюється новий орел на тій самій локації.
      *
-     * @param partner Партнер для размножения
+     * @param partner Партнер для размноження
      */
     @Override
     public void multiply(Animal partner) {
