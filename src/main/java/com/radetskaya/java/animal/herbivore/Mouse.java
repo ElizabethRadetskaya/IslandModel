@@ -8,17 +8,17 @@ import com.radetskaya.java.field.Location;
 public class Mouse extends Herbivore {
     /**
      * Конструктор класса Mouse.
-     * Устанавливает значения характеристик для мыши.
+     * Встановлює значення параметрів для миші.
      */
     public Mouse() {
         super(0.05, 1, 0.01, 500, "Mouse");
     }
 
     /**
-     * Возвращает шанс съесть определенную пищу.
+     * Повертає шанс з'їсти певну їжу.
      *
-     * @param foodName Название пищи
-     * @return Шанс съесть пищу
+     * @param foodName Назва їжі
+     * @return Шанс з'їсти їжу
      */
     @Override
     public double getChanceToEat(String foodName) {
@@ -30,10 +30,10 @@ public class Mouse extends Herbivore {
     }
 
     /**
-     * Размножается с партнером.
-     * Если партнером является мышь, создается новая мышь на той же локации.
+     * Размноження с партнером.
+     * Якщо партнером є миша, створюється нова миша на тій самій локації.
      *
-     * @param partner Партнер для размножения
+     * @param partner Партнер для размноження
      */
     @Override
     public void multiply(Animal partner) {
