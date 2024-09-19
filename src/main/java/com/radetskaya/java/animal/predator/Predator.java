@@ -7,11 +7,11 @@ public abstract class Predator extends Animal {
     /**
      * Конструктор класса Predator.
      *
-     * @param weight        Вес хищника
-     * @param step          Шаг перемещения
-     * @param maxHp         Максимальное количество здоровья
-     * @param maxPopulation Максимальное количество особей
-     * @param name          Название хищника
+     * @param weight        Вага хижака
+     * @param step          Крок переміщення
+     * @param maxHp         Максимальна кількість здоров'я
+     * @param maxPopulation Максимальна кількість особин
+     * @param name          Назва хижака
      */
     public Predator(double weight, int step, double maxHp, int maxPopulation, String name) {
         super(weight, step, maxHp, maxPopulation, name);
