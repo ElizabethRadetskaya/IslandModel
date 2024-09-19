@@ -13,8 +13,8 @@ public class Snake extends Predator {
     /**
      * Повертає шанс з'їсти вказану їжу для змії.
      *
-     * @param foodName Имя пищи
-     * @return Шанс съесть пищу
+     * @param foodName Ім'я їжі
+     * @return Шанс з'їсти їжу
      */
     @Override
     public double getChanceToEat(String foodName) {
@@ -28,9 +28,9 @@ public class Snake extends Predator {
     }
 
     /**
-     * Метод для размножения змей.
+     * Метод розмноження змій.
      *
-     * @param partner Партнер для размножения
+     * @param partner Партнер для размноження
      */
     @Override
     public void multiply(Animal partner) {
