@@ -7,17 +7,17 @@ import com.radetskaya.java.field.Location;
 public class Fox extends Predator {
     /**
      * Конструктор класса Fox.
-     * Устанавливает значения характеристик для лисы.
+     * Встановлює значення параметрів для лисиці.
      */
     public Fox() {
         super(8, 2, 2, 30, "Fox");
     }
 
     /**
-     * Получает шанс съесть определенный вид пищи.
+     * Має шанс з'їсти певний вид їжі.
      *
-     * @param foodName Название пищи
-     * @return Шанс съесть пищу
+     * @param foodName Назва їжі
+     * @return Шанс з'їсти їжу
      */
     @Override
     public double getChanceToEat(String foodName) {
@@ -31,10 +31,10 @@ public class Fox extends Predator {
     }
 
     /**
-     * Размножается с партнером.
-     * Если партнером является лиса, создается новая лиса на той же локации.
+     * Розмножується з партнером.
+     * Якщо партнером є лисиця, створюється нова лисиця на тій самій локації.
      *
-     * @param partner Партнер для размножения
+     * @param partner Партнер для размноження
      */
     @Override
     public void multiply(Animal partner) {
