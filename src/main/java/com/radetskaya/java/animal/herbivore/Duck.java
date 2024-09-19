@@ -8,7 +8,7 @@ import com.radetskaya.java.field.Location;
 public class Duck extends Herbivore {
     /**
      * Конструктор класса Duck.
-     * Устанавливает значения характеристик для утки.
+     * Встановлює значення параметрів для качки.
      */
     public Duck() {
         super(1, 4, 0.15, 200, "Duck");
