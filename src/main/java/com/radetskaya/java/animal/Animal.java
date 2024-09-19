@@ -11,22 +11,22 @@ import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 public abstract class Animal extends LifeForm {
-    private final int step; // Скорость перемещения, не более чем, клеток за ход
-    private final double maxHp; // Максимальное количество килограммов пищи нужно животному для полного насыщения
-    private double hp; // Количество здоровья животного
+    private final int step; // Швидкість переміщення, не більше ніж клітин за хід
+    private final double maxHp; // Максимальна кількість кілограмів їжі потрібна тварині для повного насичення
+    private double hp; // Кількість здоров'я тварини
 
     public Animal(double weight, int step, double maxHp, int maxPopulation, String name) {
         super(weight, maxPopulation, name);
         this.step = step;
         this.maxHp = maxHp;
-        this.hp = maxHp; // На старте максимальное количество здоровья
+        this.hp = maxHp; // На старті максимальна кількість здоров'я
     }
 
     /**
-     * Проверяет, может ли животное съесть указанную пищу.
+     * Перевіряє, чи тварина може з'їсти вказану їжу
      *
-     * @param food Пища, которую пытается съесть животное
-     * @return true, если животное успешно съело пищу, иначе - false
+     * @param food Їжа, яку намагається з'їсти тварина
+     * @return true, якщо тварина успішно з'їла їжу, інакше - false
      */
     public boolean eat(Object food) {
         double chanceToEat;
@@ -37,7 +37,7 @@ public abstract class Animal extends LifeForm {
             lifeForm = (LifeForm) food;
         } else {
             try {
-                throw new ObjectNotLifeFormException("Объект не является животным/растением.");
+                throw new ObjectNotLifeFormException("Об'єкт не є твариною/рослиною.");
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
@@ -48,8 +48,8 @@ public abstract class Animal extends LifeForm {
 
         animalEatFood = ThreadLocalRandom.current().nextDouble() < chanceToEat;
         if (animalEatFood) {
-            setHp(Math.min((getHp() + lifeForm.getWeight()), getMaxHp())); // Показатель здоровья повышается после съедения
-            Location location = IslandField.getInstance().getLocation(lifeForm.getRow(), lifeForm.getColumn()); // Животное/растение удаляется из списка обиталей локации после съедения
+            setHp(Math.min((getHp() + lifeForm.getWeight()), getMaxHp())); // Показник здоров'я підвищується після поїдання
+            Location location = IslandField.getInstance().getLocation(lifeForm.getRow(), lifeForm.getColumn()); //Тварина/рослина видаляється зі списку мешканців локації після поїдання
             if (lifeForm instanceof Animal animal) {
                 if (location.getAnimals().contains(animal)) {
                     IslandField.getInstance().removeAnimal(animal, location.getRow(), location.getColumn());
@@ -69,17 +69,17 @@ public abstract class Animal extends LifeForm {
     }
 
     /**
-     * Абстрактный метод для получения шанса съесть указанную пищу.
+     * Абстрактний метод для отримання шансу з'їсти вказану їжу.
      *
-     * @param foodName Имя пищи
-     * @return Шанс съесть пищу
+     * @param foodName Ім'я їжі
+     * @return Шанс з'їсти їжу
      */
     public abstract double getChanceToEat(String foodName);
 
     /**
-     * Абстрактный метод для размножения животного с партнером.
+     * Абстрактный метод для розмноження тварини з партнером.
      *
-     * @param partner Партнер для размножения
+     * @param partner Партнер для размноження
      */
     public abstract void multiply(Animal partner);
 
