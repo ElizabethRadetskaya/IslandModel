@@ -7,7 +7,7 @@ import com.radetskaya.java.field.Location;
 
 public class Deer extends Herbivore {
     /**
-     * Конструктор класса Deer.
+     * Конструктор класу Deer.
      * Устанавливает значения характеристик для оленя.
      */
     public Deer() {
@@ -15,10 +15,10 @@ public class Deer extends Herbivore {
     }
 
     /**
-     * Метод размножения оленя.
-     * Если партнер является оленем, то создается новый олень и добавляется на поле.
+     * Метод розмноження оленя.
+     * Якщо партнер є оленем, створюється новий олень і додається на поле.
      *
-     * @param partner Партнер для размножения
+     * @param partner Партнер для размноження
      */
     @Override
     public void multiply(Animal partner) {
