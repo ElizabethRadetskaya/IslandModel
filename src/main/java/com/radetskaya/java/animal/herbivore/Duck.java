@@ -15,10 +15,10 @@ public class Duck extends Herbivore {
     }
 
     /**
-     * Метод, возвращающий вероятность поедания определенной пищи.
+     * Метод, що повертає можливість поїдання певної їжі.
      *
      * @param foodName Название пищи
-     * @return Вероятность поедания
+     * @return Імовірність поїдання
      */
     @Override
     public double getChanceToEat(String foodName) {
@@ -30,10 +30,10 @@ public class Duck extends Herbivore {
     }
 
     /**
-     * Метод размножения утки.
-     * Если партнер является уткой, то создается новая утка и добавляется на поле.
+     * Метод розмноження качки.
+     * Якщо партнер є качкою, створюється нова качка і додається на поле.
      *
-     * @param partner Партнер для размножения
+     * @param partner Партнер для размноження
      */
     @Override
     public void multiply(Animal partner) {
