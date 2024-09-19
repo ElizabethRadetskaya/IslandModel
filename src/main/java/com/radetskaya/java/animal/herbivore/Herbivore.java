@@ -6,24 +6,24 @@ import com.radetskaya.java.animal.Animal;
 public abstract class Herbivore extends Animal {
     /**
      * Конструктор класса Herbivore.
-     * Устанавливает значения характеристик для травоядного животного.
+     * Встановлює значення характеристик для травоїдної тварини.
      *
-     * @param weight        Вес животного
-     * @param step          Шаг передвижения животного
-     * @param maxHp         Максимальное количество очков здоровья животного
-     * @param maxPopulation Максимальное количество животных данного вида на острове
-     * @param name          Название вида животного
+     * @param weight        Вага тварини
+     * @param step          Крок пересування тварини
+     * @param maxHp         Максимальна кількість очок здоров'я тварини
+     * @param maxPopulation Максимальна кількість тварин даного виду на острові
+     * @param name          Назва виду тварини
      */
     public Herbivore(double weight, int step, double maxHp, int maxPopulation, String name) {
         super(weight, step, maxHp, maxPopulation, name);
     }
 
     /**
-     * Получает вероятность поедания определенного вида пищи.
-     * Для травоядных животных вероятность поедания растений равна 1, для всех остальных видов пищи вероятность равна 0.
+     * Отримує ймовірність поїдання певного виду їжі.
+     * Для травоїдних тварин ймовірність поїдання рослин дорівнює 1, для решти видів їжі ймовірність дорівнює 0.
      *
-     * @param foodName Название вида пищи
-     * @return Вероятность поедания пищи
+     * @param foodName Назва виду їжі
+     * @return Імовірність поїдання їжі
      */
     @Override
     public double getChanceToEat(String foodName) {
