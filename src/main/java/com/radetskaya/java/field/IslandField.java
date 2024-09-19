@@ -24,9 +24,9 @@ public class IslandField {
     }
 
     /**
-     * Метод для получения экземпляра класса IslandField.
+     * Метод для отримання екземпляра класу IslandField.
      *
-     * @return Экземпляр класса IslandField
+     * @return Екземпляр класу IslandField
      */
     public static IslandField getInstance() {
         if (instance == null) {
@@ -40,11 +40,11 @@ public class IslandField {
     }
 
     /**
-     * Метод для инициализации локаций (ячеек) на острове.
-     * Устанавливает размеры двумерного массива и создает локации.
+     * Метод для ініціалізації локацій (осередків) на острові.
+     * Встановлює розміри двовимірного масиву та створює локації.
      *
-     * @param numRows    Количество строк
-     * @param numColumns Количество столбцов
+     * @param numRows    Кількість рядків
+     * @param numColumns Кількість стовпців
      */
     public void initializeLocations(int numRows, int numColumns) {
         locations = new Location[numRows][numColumns];
@@ -56,8 +56,8 @@ public class IslandField {
     }
 
     /**
-     * Перегруженный метод для инициализации локаций (ячеек) на острове.
-     * Использует значения по умолчанию для размеров.
+     * Перевантажений метод ініціалізації локацій (ячеек) на острові.
+     * Використовує стандартні значення для розмірів.
      */
     public void initializeLocations() {
         locations = new Location[numRows][numColumns];
@@ -69,22 +69,22 @@ public class IslandField {
     }
 
     /**
-     * Метод для получения локации (ячейки) по заданным координатам.
+     * Метод для отримання локації (комірки) за заданими координатами.
      *
-     * @param row    Номер строки
-     * @param column Номер столбца
-     * @return Локация с заданными координатами
+     * @param row    Номер рядка
+     * @param column Номер стовпчика
+     * @return Локація із заданими координатами
      */
     public synchronized Location getLocation(int row, int column) {
         return locations[row][column];
     }
 
     /**
-     * Метод для добавления животного в указанную локацию.
+     * Метод для додавання тварини до зазначеної локації.
      *
-     * @param animal Животное для добавления
-     * @param row    Номер строки локации
-     * @param column Номер столбца локации
+     * @param animal Тварина для додавання
+     * @param row    Номер рядка локації
+     * @param column Номер стовпця локації
      */
     public void addAnimal(Animal animal, int row, int column) {
         Location location = getLocation(row, column);
@@ -92,11 +92,11 @@ public class IslandField {
     }
 
     /**
-     * Метод для удаления животного из указанной локации.
+     * Метод видалення тварини із зазначеної локації.
      *
-     * @param animal Животное для удаления
-     * @param row    Номер строки локации
-     * @param column Номер столбца локации
+     * @param animal Тварина для видалення
+     * @param row    Номер рядка локації
+     * @param column Номер стовпця локації
      */
     public void removeAnimal(Animal animal, int row, int column) {
         Location location = getLocation(row, column);
@@ -104,11 +104,11 @@ public class IslandField {
     }
 
     /**
-     * Метод для добавления растения в указанную локацию.
+     * Метод додавання рослини в зазначену локацію
      *
-     * @param plant  Растение для добавления
-     * @param row    Номер строки локации
-     * @param column Номер столбца локации
+     * @param plant  Рослина для додавання
+     * @param row    Номер рядка локації
+     * @param column Номер стовпця локації
      */
     public void addPlant(Plant plant, int row, int column) {
         Location location = getLocation(row, column);
@@ -116,11 +116,11 @@ public class IslandField {
     }
 
     /**
-     * Метод для удаления растения из указанной локации.
+     * Метод видалення рослини із зазначеної локації.
      *
-     * @param plant  Растение для удаления
-     * @param row    Номер строки локации
-     * @param column Номер столбца локации
+     * @param plant  Рослина для видалення
+     * @param row    Номер рядка локації
+     * @param column Номер стовпця локації
      */
     public void removePlant(Plant plant, int row, int column) {
         Location location = getLocation(row, column);
@@ -128,9 +128,9 @@ public class IslandField {
     }
 
     /**
-     * Метод для получения списка всех животных на острове.
+     * Метод для отримання списку всіх тварин на острові.
      *
-     * @return Список всех животных
+     * @return Список усіх тварин
      */
     public synchronized List<Animal> getAllAnimals() {
         List<Animal> allAnimals = new ArrayList<>();
@@ -143,9 +143,9 @@ public class IslandField {
     }
 
     /**
-     * Метод для получения списка всех растений на острове.
+     * Метод отримання списку всіх рослин на острові.
      *
-     * @return Список всех растений
+     * @return Список усіх рослин
      */
     public List<Plant> getAllPlants() {
         List<Plant> allPlants = new ArrayList<>();
