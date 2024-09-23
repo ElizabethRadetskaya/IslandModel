@@ -14,7 +14,7 @@ import java.util.List;
 public class IslandField {
         private Location[][] locations; // Двовимірний масив, що складається з локацій(ячеек)
         private final int numRows = 10; //default
-        private final int numColumns = 4; //default
+        private final int numColumns = 10; //default
         private static volatile IslandField instance;
     /**
      * Приватний: клас реалізує Singleton, тому його екземпляр створюється лише через метод getInstance().
@@ -100,7 +100,7 @@ public class IslandField {
      */
     public void removeAnimal(Animal animal, int row, int column) {
         Location location = getLocation(row, column);
-        location.removeAnimal(animal);
+        location.removeAnimal(animal);  // Видаляємо тварину з локації
     }
 
     /**
@@ -156,10 +156,12 @@ public class IslandField {
         }
         return allPlants;
     }
+
     public int getNumRows() {
-        return numRows;
+        return locations.length;
     }
+
     public int getNumColumns() {
-        return numColumns;
+        return locations[0].length;
     }
 }

@@ -1,10 +1,10 @@
 
-›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(—¢R8±è´§Ÿ2J$87e4ffd8-9f04-450e-aa7d-d81dfe49f244
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(—¢R8±è´§Ÿ2J$62b5ac7d-c4d0-47ae-9393-7cf67faaa853
 •
-java:S3776!"RRefactor this method to reduce its Cognitive Complexity from 59 to the 15 allowed.(ù¦ßÌ8Œé´§Ÿ2J$a33632b1-48f0-4712-99f9-ab9d5b2e0337
+java:S3776!"RRefactor this method to reduce its Cognitive Complexity from 59 to the 15 allowed.(ù¦ßÌ8Œé´§Ÿ2J$32a68825-3500-4675-8161-fa63766d55db
 †
-java:S1155(">Use isEmpty() to check whether the collection is empty or not.(Æ£€øÿÿÿÿ8é´§Ÿ2J$a5380845-957e-438a-8f70-29bb3348240d
+java:S1155(">Use isEmpty() to check whether the collection is empty or not.(Æ£€øÿÿÿÿ8é´§Ÿ2J$49203def-a325-4a8a-a692-149a8f3e75ec
 †
-java:S1155@">Use isEmpty() to check whether the collection is empty or not.(ãôãâúÿÿÿÿ8é´§Ÿ2J$ed7940f7-0562-4cb3-8545-e74732d1fbad
-r	java:S106M"+Replace this use of System.out by a logger.(½å¡ğûÿÿÿÿ8‘é´§Ÿ2J$c9c2c66d-16a4-4b58-86e8-e655f3491f9e
-m	java:S106Q"+Replace this use of System.out by a logger.(§è£Å8åó¿§Ÿ2J$2beee34e-4064-4c33-af15-87fb1b0f36aa
+java:S1155@">Use isEmpty() to check whether the collection is empty or not.(ãôãâúÿÿÿÿ8é´§Ÿ2J$c6b15dd8-8b5d-4683-a82f-77ae3dfccc50
+r	java:S106M"+Replace this use of System.out by a logger.(½å¡ğûÿÿÿÿ8‘é´§Ÿ2J$968eab9d-1781-4344-9013-3825f78be6b9
+m	java:S106Q"+Replace this use of System.out by a logger.(§è£Å8åó¿§Ÿ2J$43fd47cd-b083-4e89-b599-024336435b66

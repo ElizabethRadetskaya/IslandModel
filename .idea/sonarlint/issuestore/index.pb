@@ -95,3 +95,15 @@ l
 <src/main/java/com/radetskaya/java/animal/predator/Snake.java,6/c/6c3baf0eae0ddd2ef8f4aa401a79119e20960c97
 w
 Gsrc/main/java/com/radetskaya/java/error/ObjectNotLifeFormException.java,8/d/8d2841f8db14cf745413464790a9399de050c00f
+m
+=src/main/java/com/radetskaya/java/swing/SimulationWindow.java,1/7/179378a0174997d6ed1ab9fc82519402e9680a06
+h
+8src/main/java/com/radetskaya/java/swing/IslandPanel.java,3/0/305ff2dd9b88f02246cc13c649d63680f2c8e39a
+l
+<src/main/java/com/radetskaya/java/swing/StatisticsPanel.java,e/c/eccc032a53facda930a417d20849aa70fd48a878
+i
+9src/main/java/com/radetskaya/java/swing/ControlPanel.java,4/f/4f66ca92e13ce883676110888735f36be557bdf6
+g
+7src/main/java/com/radetskaya/java/swing/MenuWindow.java,a/c/ac09f68656222429548bfa64f30a9ef1a1274dea
+m
+=src/main/java/com/radetskaya/java/swing/ParametersWindow.java,b/c/bcfd71ba474d8ccc38e8c8b284588b9bbf013bf8

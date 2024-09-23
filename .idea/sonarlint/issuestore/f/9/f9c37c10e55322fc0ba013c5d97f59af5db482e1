@@ -1,9 +1,13 @@
 
 d
-java:S1170"!Make this final field static too.(À÷ß‡8ô„á·Ÿ2J$055b6356-96bf-48e0-a62a-e325d8e725ba
-i
-java:S1170"!Make this final field static too.(§ŸÔæşÿÿÿÿ8ô„á·Ÿ2J$8591572d-62d8-498a-96a2-d7df2728490f
+java:S1170"!Make this final field static too.(À÷ß‡8©½Ï× 2J$b44d3c66-da0d-48d3-9395-52eb09a421eb
+c
+java:S1170"!Make this final field static too.(ÛÄó8©½Ï× 2J$46b096b5-b6f1-4989-ba3c-5515c53440e2
 á
-java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(’ş¡Üşÿÿÿÿ8õ„á·Ÿ2J$93ae6f0c-7af2-4d04-85f1-f5110c63ebdb
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(’ş¡Üşÿÿÿÿ8õ„á·Ÿ2J$a31c958b-8d25-42af-82f0-8ddff2fb13f6
 Ÿ
-java:S3077"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(Åºê±øÿÿÿÿ8ö„á·Ÿ2J$4692a26f-1117-42b7-aebf-2c56a73bfad7
+java:S3077"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(Åºê±øÿÿÿÿ8«½Ï× 2J$1cfa4539-2929-444a-ac62-7e6af2e03622
+
+java:S4275 "GRefactor this getter so that it actually refers to the field "numRows".(áùº½üÿÿÿÿ8»‚¸Ò¡2J$0689d9f8-bce4-4842-89ea-8e5020b9289d
+“
+java:S4275¤"JRefactor this getter so that it actually refers to the field "numColumns".(ôóÈóüÿÿÿÿ8»‚¸Ò¡2J$ec98f95a-10ff-488e-b345-0ed5130c9ef3

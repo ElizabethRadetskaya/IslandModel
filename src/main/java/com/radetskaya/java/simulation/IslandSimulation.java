@@ -1,5 +1,6 @@
 package com.radetskaya.java.simulation;
 
+import com.radetskaya.java.animal.Animal;
 import com.radetskaya.java.animal.herbivore.*;
 import com.radetskaya.java.animal.predator.*;
 import com.radetskaya.java.field.IslandField;
@@ -32,6 +33,7 @@ public class IslandSimulation {
     private final int countPredators = 20;//кількість хижаків
     private static volatile IslandSimulation instance;//статичне поле, яке зберігає єдиний екземпляр класу (реалізація патерну Singleton)
     private volatile ScheduledExecutorService executorService;//об’єкт ScheduledExecutorService, який управляє виконанням різних завдань симуляції в багатопотоковому середовищі
+    private int deathsCount;  // Лічильник смертей
 
     private IslandSimulation() {//Конструктор Приватний: робить клас Singleton, тому створити новий екземпляр можна тільки через метод getInstance(). Встановлює час початку симуляції
         startTime = System.currentTimeMillis();
@@ -71,7 +73,7 @@ public class IslandSimulation {
     }
 
     /**
-     *Створює модель з кількістю тварин і рослин за замовчуванням, використовуючи значення з полів класу
+     * Створює модель з кількістю тварин і рослин за замовчуванням, використовуючи значення з полів класу
      */
     public void createIslandModel() {
         placeHerbivores(countHerbivores);
@@ -298,5 +300,32 @@ public class IslandSimulation {
 
     public int getCountPredators() {
         return countPredators;
+    }
+
+    // Метод, який збільшує кількість смертей
+    public void incrementDeathsCount() {
+        deathsCount++;
+    }
+
+    // Метод для отримання кількості смертей
+    public int getDeathsCount() {
+        return deathsCount;
+    }
+
+    public void simulateStep() {
+        List<Animal> allAnimals = IslandField.getInstance().getAllAnimals();
+
+        for (Animal animal : allAnimals) {
+            if (animal.getHp() <= 0) {  // Якщо тварина померла
+                incrementDeathsCount();
+
+                // Отримуємо координати тварини
+                int row = animal.getRow();  // Метод для отримання рядка
+                int column = animal.getColumn();  // Метод для отримання стовпця
+
+                // Викликаємо метод для видалення тварини з вказаними координатами
+                IslandField.getInstance().removeAnimal(animal, row, column);
+            }
+        }
     }
 }
